@@ -258,7 +258,7 @@ do
     fi
 done
 
-netdata_banner "Galilei Proc real-time performance monitoring, done right!"
+netdata_banner "GALILEI Proc real-time performance monitoring!"
 cat <<BANNER1
 
   You are about to build and install netdata to your system.
@@ -290,7 +290,7 @@ if [ "${UID}" -ne 0 ]
     then
     if [ -z "${NETDATA_PREFIX}" ]
         then
-        netdata_banner "Galilei Proc: wrong command line options!"
+        netdata_banner "GALILEI Proc: wrong commandline options!"
         cat <<NONROOTNOPREFIX
   
   ${TPUT_RED}${TPUT_BOLD}Sorry! This will fail!${TPUT_RESET}

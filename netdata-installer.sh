@@ -80,7 +80,7 @@ LIBS_ARE_HERE=0
 NETDATA_CONFIGURE_OPTIONS="${NETDATA_CONFIGURE_OPTIONS-}"
 
 usage() {
-    netdata_banner "installer command line options"
+    netdata_banner "Galilei Proc installer command line options"
     cat <<USAGE
 
 ${ME} <installer options>
@@ -258,7 +258,7 @@ do
     fi
 done
 
-netdata_banner "real-time performance monitoring, done right!"
+netdata_banner "Galilei Proc real-time performance monitoring, done right!"
 cat <<BANNER1
 
   You are about to build and install netdata to your system.
@@ -290,7 +290,7 @@ if [ "${UID}" -ne 0 ]
     then
     if [ -z "${NETDATA_PREFIX}" ]
         then
-        netdata_banner "wrong command line options!"
+        netdata_banner "Galilei Proc: wrong command line options!"
         cat <<NONROOTNOPREFIX
   
   ${TPUT_RED}${TPUT_BOLD}Sorry! This will fail!${TPUT_RESET}
@@ -364,7 +364,7 @@ then
     then
         echo "Will skip autoreconf step"
     else
-        netdata_banner "autotools v2.60 required"
+        netdata_banner "Galilei Proc - autotools v2.60 required"
         cat <<"EOF"
 
 -------------------------------------------------------------------------------
@@ -398,7 +398,7 @@ if [ ${DONOTWAIT} -eq 0 ]
 fi
 
 build_error() {
-    netdata_banner "sorry, it failed to build..."
+    netdata_banner "Galilei Proc Monitoring - sorry, it failed to build..."
     cat <<EOF
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1307,9 +1307,9 @@ progress "We are done!"
 
 if [ ${started} -eq 1 ]
     then
-    netdata_banner "is installed and running now!"
+    netdata_banner "GALILEI Proc Realtime Monitor is installed and running now!"
 else
-    netdata_banner "is installed now!"
+    netdata_banner "GALILEI Proc Realtime Monitor is installed now!"
 fi
 
 echo >&2 "  enjoy real-time performance and health monitoring..."
